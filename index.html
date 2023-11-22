@@ -113,37 +113,50 @@
           <!-- Dashboards -->
           <li class="menu-item active">
             <a href="javascript:void(0);" class="menu-link">
-              <i class="menu-icon tf-icons bx bx-home-circle"></i>
-              <div data-i18n="Dashboards">Dashboards</div>
-              <div class="badge bg-danger rounded-pill ms-auto">5</div>
+              <i class="menu-icon fa-solid fa-house"></i>
+              <div data-i18n="Dashboards">Dashboard</div>
             </a>
-          </li>
-
-          <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Demo</span>
           </li>
 
           <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link">
-              <i class="menu-icon tf-icons bx bx-star"></i>
-              <div data-i18n="Dashboards">Demo</div>
+              <i class="menu-icon fa-regular fa-handshake"></i>
+              <div>Active deals</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link">
+              <i class="menu-icon fa-solid fa-list-ol"></i>
+              <div>Listings</div>
+            </a>
+          </li>
+
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link">
+              <i class="menu-icon fa-solid fa-users"></i>
+              <div>Users</div>
+            </a>
+          </li>
+
+          <li class="menu-header small text-uppercase">
+            <span class="menu-header-text">Settings</span>
+          </li>
+
+          <li class="menu-item">
+            <a href="javascript:void(0);" class="menu-link">
+              <i class="menu-icon fa-solid fa-sliders"></i>
+              <div>Platform settings</div>
             </a>
           </li>
 
           <!-- Misc -->
-          <li class="menu-header small text-uppercase"><span class="menu-header-text">Дополнительно</span></li>
+          <li class="menu-header small text-uppercase"><span class="menu-header-text">Other</span></li>
           <li class="menu-item">
             <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues" target="_blank"
               class="menu-link">
               <i class="menu-icon tf-icons bx bx-support"></i>
-              <div data-i18n="Support">Поддержка</div>
-            </a>
-          </li>
-          <li class="menu-item">
-            <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/"
-              target="_blank" class="menu-link">
-              <i class="menu-icon tf-icons bx bx-file"></i>
-              <div data-i18n="Documentation">Документатция</div>
+              <div data-i18n="Support">Support</div>
             </a>
           </li>
         </ul>
@@ -343,8 +356,9 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="row">
+
               <!-- Order Statistics -->
               <div class="col-md-6 col-lg-4 col-xl-4 order-0 mb-4">
                 <div class="card h-100">
@@ -417,28 +431,17 @@
                 <div class="card h-100">
                   <div class="card-header d-flex align-items-center justify-content-between">
                     <h5 class="card-title m-0 me-2">Open deals</h5>
-                    <div class="dropdown">
-                      <button class="btn p-0" type="button" id="transactionID" data-bs-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">
-                        <i class="bx bx-dots-vertical-rounded"></i>
-                      </button>
-                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="transactionID">
-                        <a class="dropdown-item" href="javascript:void(0);">Last 28 Days</a>
-                        <a class="dropdown-item" href="javascript:void(0);">Last Month</a>
-                        <a class="dropdown-item" href="javascript:void(0);">Last Year</a>
-                      </div>
-                    </div>
                   </div>
                   <div class="card-body">
                     <ul class="p-0 m-0">
-                      <li class="d-flex mb-4 pb-1">
+                      <li class="d-flex mb-4 pb-1" style="cursor: pointer;">
                         <div class="avatar flex-shrink-0 me-3">
                           <img src="assets/img/icons/unicons/paypal.png" alt="User" class="rounded" />
                         </div>
                         <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
                           <div class="me-2">
-                            <small class="text-muted d-block mb-1">Paypal</small>
-                            <h6 class="mb-0">Send money</h6>
+                            <small class="text-muted d-block mb-1">02.11.2023 04:54PM</small>
+                            <h6 class="mb-0">Account name</h6>
                           </div>
                           <div class="user-progress d-flex align-items-center gap-1">
                             <h6 class="mb-0">+82.6</h6>
@@ -446,82 +449,9 @@
                           </div>
                         </div>
                       </li>
-                      <li class="d-flex mb-4 pb-1">
-                        <div class="avatar flex-shrink-0 me-3">
-                          <img src="assets/img/icons/unicons/wallet.png" alt="User" class="rounded" />
-                        </div>
-                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                          <div class="me-2">
-                            <small class="text-muted d-block mb-1">Wallet</small>
-                            <h6 class="mb-0">Mac'D</h6>
-                          </div>
-                          <div class="user-progress d-flex align-items-center gap-1">
-                            <h6 class="mb-0">+270.69</h6>
-                            <span class="text-muted">USD</span>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="d-flex mb-4 pb-1">
-                        <div class="avatar flex-shrink-0 me-3">
-                          <img src="assets/img/icons/unicons/chart.png" alt="User" class="rounded" />
-                        </div>
-                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                          <div class="me-2">
-                            <small class="text-muted d-block mb-1">Transfer</small>
-                            <h6 class="mb-0">Refund</h6>
-                          </div>
-                          <div class="user-progress d-flex align-items-center gap-1">
-                            <h6 class="mb-0">+637.91</h6>
-                            <span class="text-muted">USD</span>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="d-flex mb-4 pb-1">
-                        <div class="avatar flex-shrink-0 me-3">
-                          <img src="assets/img/icons/unicons/cc-success.png" alt="User" class="rounded" />
-                        </div>
-                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                          <div class="me-2">
-                            <small class="text-muted d-block mb-1">Credit Card</small>
-                            <h6 class="mb-0">Ordered Food</h6>
-                          </div>
-                          <div class="user-progress d-flex align-items-center gap-1">
-                            <h6 class="mb-0">-838.71</h6>
-                            <span class="text-muted">USD</span>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="d-flex mb-4 pb-1">
-                        <div class="avatar flex-shrink-0 me-3">
-                          <img src="assets/img/icons/unicons/wallet.png" alt="User" class="rounded" />
-                        </div>
-                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                          <div class="me-2">
-                            <small class="text-muted d-block mb-1">Wallet</small>
-                            <h6 class="mb-0">Starbucks</h6>
-                          </div>
-                          <div class="user-progress d-flex align-items-center gap-1">
-                            <h6 class="mb-0">+203.33</h6>
-                            <span class="text-muted">USD</span>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="d-flex">
-                        <div class="avatar flex-shrink-0 me-3">
-                          <img src="assets/img/icons/unicons/cc-warning.png" alt="User" class="rounded" />
-                        </div>
-                        <div class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2">
-                          <div class="me-2">
-                            <small class="text-muted d-block mb-1">Mastercard</small>
-                            <h6 class="mb-0">Ordered Food</h6>
-                          </div>
-                          <div class="user-progress d-flex align-items-center gap-1">
-                            <h6 class="mb-0">-92.45</h6>
-                            <span class="text-muted">USD</span>
-                          </div>
-                        </div>
-                      </li>
                     </ul>
+                    <a href="javascript:void(0)" class="btn btn-outline-primary">View all <i
+                        class='bx bx-right-arrow-alt'></i></a>
                   </div>
                 </div>
               </div>
@@ -537,19 +467,7 @@
                 ©
                 <script>
                   document.write(new Date().getFullYear());
-                </script>
-                , made with ❤️ by
-                <a href="https://themeselection.com" target="_blank" class="footer-link fw-medium">ThemeSelection</a>
-              </div>
-              <div class="d-none d-lg-inline-block">
-                <a href="https://themeselection.com/license/" class="footer-link me-4" target="_blank">License</a>
-                <a href="https://themeselection.com/" target="_blank" class="footer-link me-4">More Themes</a>
-
-                <a href="https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/"
-                  target="_blank" class="footer-link me-4">Documentation</a>
-
-                <a href="https://github.com/themeselection/sneat-html-admin-template-free/issues" target="_blank"
-                  class="footer-link">Support</a>
+                </script>, Flame Flips
               </div>
             </div>
           </footer>
@@ -585,7 +503,165 @@
   <script src="assets/js/main.js"></script>
 
   <!-- Page JS -->
-  <script src="assets/js/dashboards-analytics.js"></script>
+  <script>
+    /**
+ * Dashboard Analytics
+ */
+
+    'use strict';
+
+    (function () {
+      let cardColor, headingColor, axisColor, shadeColor, borderColor;
+
+      cardColor = config.colors.cardColor;
+      headingColor = config.colors.headingColor;
+      axisColor = config.colors.axisColor;
+      borderColor = config.colors.borderColor;
+
+      // Profit Report Line Chart
+      // --------------------------------------------------------------------
+      const profileReportChartEl = document.querySelector('#profileReportChart'),
+        profileReportChartConfig = {
+          chart: {
+            height: 80,
+            // width: 175,
+            type: 'line',
+            toolbar: {
+              show: false
+            },
+            dropShadow: {
+              enabled: true,
+              top: 10,
+              left: 5,
+              blur: 3,
+              color: config.colors.warning,
+              opacity: 0.15
+            },
+            sparkline: {
+              enabled: true
+            }
+          },
+          grid: {
+            show: false,
+            padding: {
+              right: 8
+            }
+          },
+          colors: [config.colors.warning],
+          dataLabels: {
+            enabled: false
+          },
+          stroke: {
+            width: 5,
+            curve: 'smooth'
+          },
+          series: [
+            {
+              data: [110, 270, 145, 245, 205, 285]
+            }
+          ],
+          xaxis: {
+            show: false,
+            lines: {
+              show: false
+            },
+            labels: {
+              show: false
+            },
+            axisBorder: {
+              show: false
+            }
+          },
+          yaxis: {
+            show: false
+          }
+        };
+      if (typeof profileReportChartEl !== undefined && profileReportChartEl !== null) {
+        const profileReportChart = new ApexCharts(profileReportChartEl, profileReportChartConfig);
+        profileReportChart.render();
+      }
+
+      // Order Statistics Chart
+      // --------------------------------------------------------------------
+      const chartOrderStatistics = document.querySelector('#orderStatisticsChart'),
+        orderChartConfig = {
+          chart: {
+            height: 165,
+            width: 130,
+            type: 'donut'
+          },
+          labels: ['Electronic', 'Sports', 'Decor', 'Fashion'],
+          series: [85, 15, 50, 50],
+          colors: [config.colors.primary, config.colors.secondary, config.colors.info, config.colors.success],
+          stroke: {
+            width: 5,
+            colors: [cardColor]
+          },
+          dataLabels: {
+            enabled: false,
+            formatter: function (val, opt) {
+              return parseInt(val) + '%';
+            }
+          },
+          legend: {
+            show: false
+          },
+          grid: {
+            padding: {
+              top: 0,
+              bottom: 0,
+              right: 15
+            }
+          },
+          states: {
+            hover: {
+              filter: { type: 'none' }
+            },
+            active: {
+              filter: { type: 'none' }
+            }
+          },
+          plotOptions: {
+            pie: {
+              donut: {
+                size: '75%',
+                labels: {
+                  show: true,
+                  value: {
+                    fontSize: '1.5rem',
+                    fontFamily: 'Public Sans',
+                    color: headingColor,
+                    offsetY: -15,
+                    formatter: function (val) {
+                      return parseInt(val) + '%';
+                    }
+                  },
+                  name: {
+                    offsetY: 20,
+                    fontFamily: 'Public Sans'
+                  },
+                  total: {
+                    show: true,
+                    fontSize: '0.8125rem',
+                    color: axisColor,
+                    label: 'Weekly',
+                    formatter: function (w) {
+                      return '38%';
+                    }
+                  }
+                }
+              }
+            }
+          }
+        };
+      if (typeof chartOrderStatistics !== undefined && chartOrderStatistics !== null) {
+        const statisticsChart = new ApexCharts(chartOrderStatistics, orderChartConfig);
+        statisticsChart.render();
+      }
+
+    })();
+
+  </script>
 
   <!-- Place this tag in your head or just before your close body tag. -->
   <script async defer src="https://buttons.github.io/buttons.js"></script>
