@@ -70,7 +70,7 @@
 
         <ul class="menu-inner py-1">
           <!-- Dashboards -->
-          <li class="menu-item">
+          <li class="menu-item active">
             <a href="javascript:void(0);" class="menu-link">
               <i class="menu-icon fa-solid fa-house"></i>
               <div data-i18n="Dashboards">Dashboard</div>
@@ -102,7 +102,7 @@
             <span class="menu-header-text">Settings</span>
           </li>
 
-          <li class="menu-item active">
+          <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link">
               <i class="menu-icon fa-solid fa-sliders"></i>
               <div>Platform settings</div>
@@ -152,7 +152,7 @@
               <li class="nav-item navbar-dropdown dropdown-user dropdown">
                 <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
                   <div class="avatar avatar-online">
-                    <img src="assets/img/avatars/1.png" alt class="w-px-40 h-auto rounded-circle" />
+                    <img src="assets/user.png" alt class="w-px-40 h-auto rounded-circle" />
                   </div>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
@@ -161,39 +161,21 @@
                       <div class="d-flex">
                         <div class="flex-shrink-0 me-3">
                           <div class="avatar avatar-online">
-                            <img src="assets/img/avatars/1.png" alt class="w-px-40 h-auto
+                            <img src="assets/user.png" alt class="w-px-40 h-auto
                             rounded-circle" />
                           </div>
                         </div>
                         <div class="flex-grow-1">
-                          <span class="fw-medium d-block">John Doe</span>
+                          <span class="fw-medium d-block">@geekkidd</span>
                           <small class="text-muted">Admin</small>
                         </div>
                       </div>
                     </a>
                   </li>
                   <li>
-                    <div class="dropdown-divider"></div>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <i class="bx bx-user me-2"></i>
-                      <span class="align-middle">My Profile</span>
-                    </a>
-                  </li>
-                  <li>
                     <a class="dropdown-item" href="#">
                       <i class="bx bx-cog me-2"></i>
                       <span class="align-middle">Settings</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">
-                      <span class="d-flex align-items-center align-middle">
-                        <i class="flex-shrink-0 bx bx-credit-card me-2"></i>
-                        <span class="flex-grow-1 align-middle ms-1">Billing</span>
-                        <span class="flex-shrink-0 badge badge-center rounded-pill bg-danger w-px-20 h-px-20">4</span>
-                      </span>
                     </a>
                   </li>
                   <li>
@@ -218,99 +200,55 @@
           <!-- Content -->
 
           <div class="container-xxl flex-grow-1 container-p-y">
-            
-            <div class="card mb-3">
-              <h5 class="card-header">Available Platforms</h5>
-              <div class="card-body">
-                <!-- Form for adding items -->
-                <form>
-                  <div class="row align-items-end">
-                    <div class="col-md-5">
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Name</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="YouTube">
-                      </div>
-                    </div>
-                    <div class="col-md-5">
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Icon</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                          placeholder="fa-brands fa-youtube">
-                      </div>
-                    </div>
-                    <div class="col-md-2">
-                      <button type="button" class="btn btn-primary mb-3" style="width: 100%;">Add <i
-                          class='bx bx-plus'></i></button>
-                    </div>
-                  </div>
-                </form>
-
-                <div style="display: flex !important;">
-                  <span class="badge bg-label-secondary me-1">
-                    <h7>
-                      <i class="fa-brands fa-youtube"></i> YouTube
-                    </h7>
-                    <a href="link_to_remove">
-                      <i class='bx bx-trash'></i>
-                    </a>
-                  </span>
-                  
-                  <span class="badge bg-label-secondary me-1">
-                    <h7>
-                      <i class="fa-brands fa-youtube"></i> YouTube
-                    </h7>
-                    <a href="link_to_remove">
-                      <i class='bx bx-trash'></i>
-                    </a>
-                  </span>
-                  
-                </div>
-              </div>
-            </div>
 
             <div class="card">
-              <h5 class="card-header">Available subjects</h5>
+              <h5 class="card-header">Change Password</h5>
               <div class="card-body">
-                <!-- Form for adding items -->
                 <form>
-                  <div class="row align-items-end">
-                    <div class="col-md-10">
-                      <div class="mb-3">
-                        <label for="exampleFormControlInput1" class="form-label">Name</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Bussines">
+                  <div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="mb-3">
+                          <label for="current-password-input" class="form-label">Current
+                            password</label>
+                          <input type="password" class="form-control" placeholder="Enter Current password"
+                            id="current-password-input">
+                        </div>
                       </div>
+                      <!--end col-->
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label for="new-password-input" class="form-label">New
+                            password</label>
+                          <input type="password" class="form-control" placeholder="Enter new password"
+                            id="new-password-input">
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <div class="col-lg-6">
+                        <div class="mb-3">
+                          <label for="confirm-password-input" class="form-label">Confirm Password</label>
+                          <input type="password" class="form-control" placeholder="Confirm Password"
+                            id="confirm-password-input">
+                        </div>
+                      </div>
+                      <!--end col-->
+                      <!-- <div class="col-lg-12">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="verification">
+                          <label class="form-check-label" for="verification">
+                            Enable Two-Step Verification via email
+                          </label>
+                        </div>
+                      </div> -->
+                      <!--end col-->
                     </div>
-                    <div class="col-md-2">
-                      <button type="button" class="btn btn-primary mb-3" style="width: 100%;">Add <i
-                          class='bx bx-plus'></i></button>
-                    </div>
+                    <!--end row-->
                   </div>
+                  <button type="button" class="btn btn-primary">Save settings</button>
                 </form>
-
-                <div style="display: flex !important;">
-                  <span class="badge bg-label-secondary me-1">
-                    <h7>
-                      Bussines
-                    </h7>
-                    <a href="link_to_remove">
-                      <i class='bx bx-trash'></i>
-                    </a>
-                  </span>
-                  
-                  <span class="badge bg-label-secondary me-1">
-                    <h7>
-                      Fun
-                    </h7>
-                    <a href="link_to_remove">
-                      <i class='bx bx-trash'></i>
-                    </a>
-                  </span>
-                  
-                </div>
               </div>
             </div>
-
-            
           </div>
           <!-- / Content -->
 
